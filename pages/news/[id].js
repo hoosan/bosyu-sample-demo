@@ -4,7 +4,7 @@ import { Meta } from '../../components/meta';
 const NewsId = ({ news }) => {
   return (
     <Layout>
-      <Meta title={news.title} description={news.description} image={new.image.url} />
+      <Meta title={news.title} description={news.description} image={news.image.url} />
       <div className="main">
         <div className="main_container">
           <div className="category">{news.category}</div>
