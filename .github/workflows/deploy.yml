@@ -1,6 +1,14 @@
 name: Deploy to Vercel 
 
-on: [push]
+on: 
+  repository_dispatch:
+  push:
+    branches:
+      - master 
+
+  pull_request:
+    branches:
+      - master
 
 jobs:
   build:
